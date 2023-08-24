@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(144, 144, 240);
+}
+
+.caja-padre {
+    position: absolute;
+    width: 40%;
+    min-width: 590px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: linear-gradient(450deg, rgb(29, 29, 122), rgb(33, 29, 29));
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contenedor * {
+    font-family: sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.detalles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu {
+    position: relative;
+    border: 1px solid rgb(48, 255, 255);
+    border-radius: 20px;
+}
+
+.menu div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+
+#html-menu {
+    animation: html-barra 2s forwards;
+
+}
+
+@keyframes html-barra {
+    100% {
+        width: 90%;
+    }
+}
+
+#CSS-menu {
+    animation: css-barra 2s forwards;
+}
+
+@keyframes css-barra {
+    100% {
+        width: 75%;
+    }
+}
+
+#js-menu {
+    animation: js-barra 2s forwards;
+}
+
+@keyframes js-barra {
+    100% {
+        width: 60%;
+    }
+}
+
+#react-menu {
+    animation: react-barra 2s forwards;
+}
+
+@keyframes react-barra {
+    100% {
+        width: 80%;
+    }
+}
