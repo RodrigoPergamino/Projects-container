@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: rgb(124, 18, 163);
+}
+
+.caja-padre {
+    position: absolute;
+    width: 40%;
+    min-width: 590px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+}
+
+.contenedor {
+    position: absolute;
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: linear-gradient(90deg, rgb(43, 43, 84), #0005);
+    border: 2px solid rgb(249, 248, 248);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px #0005;
+}
+
+.contenedor * {
+    font-family: consolas;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+h2 {
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.detalles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu {
+    position: relative;
+    border: 1px solid aqua;
+    border-radius: 20px;
+}
+
+.menu div {
+    height: 8px;
+    border-radius: 10px;
+    width: 0;
+    background: rgb(255, 173, 10);
+    position: relative;
+}
+
+#html-menu {
+    animation: html 2s forwards;
+}
+
+@keyframes html {
+    100% {
+        width: 90%;
+    }
+}
+
+#css-menu {
+    animation: css 2s forwards;
+}
+
+@keyframes css {
+    100% {
+        width: 80%;
+    }
+}
+
+#js-menu {
+    animation: js 2s forwards;
+}
+
+@keyframes js {
+    100% {
+        width: 40%;
+    }
+}
+
+#react-menu {
+    animation: react 2s forwards;
+}
+
+@keyframes react {
+    100% {
+        width: 20%;
+    }
+}

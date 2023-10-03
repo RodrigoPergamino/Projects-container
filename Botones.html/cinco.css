@@ -1,0 +1,33 @@
+.boton.cinco span {
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 40%;
+}
+
+.boton.cinco .span2 {
+    transition: .4s ease-in-out all;
+    position: absolute;
+    right: -170px;
+    z-index: 1;
+
+}
+
+.boton.cinco .span2:hover {
+    right: -110px;
+    opacity: 4;
+}
+
+.boton.cinco:hover span {
+    left: 20px;
+}
+
+.boton.cinco:hover::after {
+    content: "";
+    background: green;
+    width: 100%;
+    height: 100%;
+}
+
+.boton.cinco {
+    top: 28px;
+}
